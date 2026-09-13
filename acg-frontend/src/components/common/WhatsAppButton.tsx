@@ -13,7 +13,7 @@ const INITIAL_MESSAGES: Message[] = [
   },
 ]
 
-export default function AIChatbotWidget() {
+export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>(INITIAL_MESSAGES)
   const [inputValue, setInputValue] = useState('')

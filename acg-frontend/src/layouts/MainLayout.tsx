@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
-import WhatsAppButton from '../components/common/WhatsAppButton'
 
 export default function MainLayout() {
   return (
@@ -11,7 +10,6 @@ export default function MainLayout() {
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppButton />
     </div>
   )
 }
