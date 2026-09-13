@@ -1,0 +1,197 @@
+import { Service, Project, Article, Stat } from '../types'
+
+export const services: Service[] = [
+  {
+    id: '1',
+    slug: 'immobilier',
+    title: 'Promotion Immobilière',
+    shortDescription: 'Des projets immobiliers d\'excellence, de la conception à la livraison.',
+    description: 'Alpha Consulting Group développe des projets immobiliers ambitieux qui répondent aux standards les plus élevés de qualité et d\'innovation architecturale.',
+    icon: 'building',
+    // Immeuble moderne Afrique / skyline urbain africain
+    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80',
+    features: [
+      'Développement de projets résidentiels et commerciaux',
+      'Gestion de patrimoine immobilier',
+      'Études de faisabilité et conseil',
+      'Commercialisation et vente',
+      'Gestion locative',
+    ],
+  },
+  {
+    id: '2',
+    slug: 'logistique',
+    title: 'Logistique',
+    shortDescription: 'Des solutions logistiques intégrées pour optimiser vos flux.',
+    description: 'Notre division logistique propose des solutions sur mesure pour gérer, optimiser et sécuriser vos chaînes d\'approvisionnement en Afrique.',
+    icon: 'truck',
+    // Entrepôt / logistique moderne
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    features: [
+      'Transport et distribution nationale',
+      'Gestion d\'entrepôts et stockage',
+      'Logistique inversée',
+      'Suivi en temps réel',
+      'Optimisation des coûts logistiques',
+    ],
+  },
+  {
+    id: '3',
+    slug: 'communication',
+    title: 'Communication',
+    shortDescription: 'Votre image, notre expertise. Des stratégies qui marquent les esprits.',
+    description: 'ACG accompagne les entreprises dans la construction de leur identité de marque et le déploiement de stratégies de communication percutantes.',
+    icon: 'megaphone',
+    // Équipe africaine en réunion créative / brainstorming
+    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80',
+    features: [
+      'Stratégie de communication globale',
+      'Identité visuelle et branding',
+      'Communication digitale',
+      'Relations presse et publiques',
+      'Production de contenu',
+    ],
+  },
+  {
+    id: '4',
+    slug: 'livraison',
+    title: 'Livraison',
+    shortDescription: 'Rapide, fiable, traçable. La livraison au service de votre activité.',
+    description: 'Notre service de livraison assure une distribution efficace et ponctuelle, avec des solutions adaptées aux besoins des entreprises et des particuliers.',
+    icon: 'package',
+    // Livreur en action / scooter livraison urbaine
+    image: 'https://images.unsplash.com/photo-1619057736823-c600c4ef38a4?w=800&q=80',
+    features: [
+      'Livraison express et standard',
+      'Livraison du dernier kilomètre',
+      'Suivi en temps réel',
+      'Gestion des retours',
+      'Solutions B2B et B2C',
+    ],
+  },
+]
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'Résidence Les Palmiers',
+    sector: 'immobilier',
+    description: 'Programme résidentiel haut de gamme de 48 appartements dans un cadre verdoyant.',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80',
+    year: 2025,
+    location: 'Dakar, Sénégal',
+  },
+  {
+    id: '2',
+    title: 'Hub Logistique Central',
+    sector: 'logistique',
+    description: 'Conception et opération d\'un entrepôt logistique de 5000 m².',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80',
+    year: 2025,
+    location: 'Thiès, Sénégal',
+  },
+  {
+    id: '3',
+    title: 'Campagne Brand Summit',
+    sector: 'communication',
+    description: 'Refonte complète de l\'identité visuelle et déploiement d\'une campagne 360°.',
+    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80',
+    year: 2026,
+    location: 'Dakar, Sénégal',
+  },
+  {
+    id: '4',
+    title: 'FlexDeliver Network',
+    sector: 'livraison',
+    description: 'Mise en place d\'un réseau de livraison urbaine pour 3 grandes villes.',
+    image: 'https://images.unsplash.com/photo-1568393691622-c7ba131d63b4?w=600&q=80',
+    year: 2026,
+    location: 'Dakar, Sénégal',
+  },
+  {
+    id: '5',
+    title: 'Tour Horizon Business',
+    sector: 'immobilier',
+    description: 'Immeuble de bureaux moderne, 12 étages, certifié HQE.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80',
+    year: 2024,
+    location: 'Saint-Louis, Sénégal',
+  },
+  {
+    id: '6',
+    title: 'Supply Chain Optimisation',
+    sector: 'logistique',
+    description: 'Optimisation complète de la chaîne d\'approvisionnement d\'un groupe agroalimentaire.',
+    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80',
+    year: 2024,
+    location: 'Ziguinchor, Sénégal',
+  },
+]
+
+export const articles: Article[] = [
+  {
+    id: '1',
+    slug: 'acg-expansion-afrique-ouest',
+    title: 'ACG renforce sa présence en Afrique de l\'Ouest',
+    summary: 'Alpha Consulting Group annonce l\'ouverture de nouveaux bureaux pour accompagner la croissance de ses activités dans la région.',
+    content: 'Alpha Consulting Group franchit une nouvelle étape dans son développement régional avec l\'ouverture d\'un nouveau bureau à Saint-Louis et le renforcement de ses équipes à Thiès...',
+    // Businessmen africains en réunion
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80',
+    date: '2026-09-01',
+    category: 'Expansion',
+    author: 'Équipe ACG',
+  },
+  {
+    id: '2',
+    slug: 'logistique-durable-innovation',
+    title: 'Logistique durable : l\'innovation au cœur de notre stratégie',
+    summary: 'Découvrez comment ACG intègre des pratiques logistiques respectueuses de l\'environnement dans ses opérations quotidiennes.',
+    content: 'Face aux défis environnementaux actuels, ACG s\'engage à réduire son empreinte carbone tout en maintenant des standards d\'excellence...',
+    // Logistique / transport durable
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
+    date: '2026-08-15',
+    category: 'Innovation',
+    author: 'Direction Logistique',
+  },
+  {
+    id: '3',
+    slug: 'marche-immobilier-afrique-2026',
+    title: 'Marché immobilier africain : tendances 2026',
+    summary: 'Analyse des grandes tendances qui façonnent le marché immobilier africain cette année et les opportunités qui en découlent.',
+    content: 'Le marché immobilier africain continue de démontrer une résilience remarquable face aux défis économiques mondiaux...',
+    // Architecte africain / plans
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    date: '2026-07-20',
+    category: 'Immobilier',
+    author: 'Département Immobilier',
+  },
+]
+
+export const stats: Stat[] = [
+  { value: '10+', label: 'Projets réalisés' },
+  { value: '4', label: 'Domaines d\'expertise' },
+  { value: '100%', label: 'Engagement client' },
+]
+
+export const whyChooseACG = [
+  {
+    icon: 'award',
+    title: 'Expertise',
+    description: 'Une approche professionnelle et sur mesure, adaptée aux besoins spécifiques de chaque client.',
+  },
+  {
+    icon: 'shield',
+    title: 'Fiabilité',
+    description: 'Un engagement indéfectible basé sur la confiance, la transparence et les résultats.',
+  },
+  {
+    icon: 'lightbulb',
+    title: 'Innovation',
+    description: 'Des solutions modernes, technologiques et efficaces pour relever les défis d\'aujourd\'hui.',
+  },
+  {
+    icon: 'users',
+    title: 'Proximité',
+    description: 'Une relation durable et authentique avec tous nos clients et partenaires.',
+  },
+]
